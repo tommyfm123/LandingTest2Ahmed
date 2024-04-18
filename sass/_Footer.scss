@@ -1,0 +1,35 @@
+footer{
+    // width: 80%;
+    // margin: 0 auto;
+    text-align: center;
+    margin-top: 1rem;
+    // border: 2px yellow solid;
+
+    img{
+        width: 10%; //tamaño imagen
+    }
+
+    p{
+        font-size: 1rem;
+        padding: 20px;
+        color: rgb(186, 191, 196);
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    footer{
+        text-align: center;  
+        padding: 2rem 0;  
+        img{
+            width: 30%; //tamaño imagen
+        }
+    
+        p{
+            font-size: .7rem;
+            padding: 10px;
+        }
+    }
+
+}

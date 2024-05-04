@@ -96,6 +96,7 @@ header .logo img {
   font-family: inherit;
   color: black;
   font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .cssbuttons-io:hover {
@@ -183,9 +184,6 @@ header .logo img {
     letter-spacing: 0.05em;
     border-radius: 0.7em;
     cursor: pointer;
-    border: none;
-    background: white;
-    color: ghostwhite;
     overflow: hidden;
     transition: none;
     margin-top: 1.5rem;

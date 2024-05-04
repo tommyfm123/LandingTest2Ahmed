@@ -84,14 +84,14 @@ header .logo img {
   border-radius: 10px;
   cursor: pointer;
   border: none;
-  background: rgb(235, 235, 235);
+  background: rgb(231, 231, 231);
   color: ghostwhite;
   overflow: hidden;
   transition: all ease-in-out 0.3s;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
-.cssbuttons-io a {
+.cssbuttons-io .textoBtn {
   text-decoration: none;
   font-family: inherit;
   color: black;
@@ -116,7 +116,7 @@ header .logo img {
   transition: color 0.4s;
   display: inline-flex;
   align-items: center;
-  padding: 0.8em 1.2em 0.8em 1.05em;
+  padding: 0.5em 1.2em 0.5em 1.05em;
 }
 
 #BtnServices {
@@ -191,7 +191,7 @@ header .logo img {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
-  .cssbuttons-io a {
+  .cssbuttons-io .textoBtn {
     text-decoration: none;
     font-family: inherit;
     color: black;
@@ -210,7 +210,7 @@ header .logo img {
     position: relative;
     z-index: 10;
     transition: none;
-    padding: 0.8em 1.2em 0.8em 1.05em;
+    padding: 0.4em 1em 0.4em 1em;
   }
   .cssbuttons-io::before,
   .cssbuttons-io::after {

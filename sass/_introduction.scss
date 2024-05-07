@@ -35,7 +35,6 @@
 .responsive-iframe {
   position: relative;
   width: 100%;
-  height: 0;
   padding-bottom: 40%; /* Ajusta este valor según tus necesidades */
 }
 
@@ -120,6 +119,7 @@
       justify-content: center;
       align-items: center;
       padding: 0 1rem; //padding costados
+      height: auto;
 
       .textVSL{
         font-size: 1rem;
@@ -132,8 +132,8 @@
       .responsive-iframe {
         position: relative;
         width: 100%;
-        height: 0;
-        padding-bottom: 50%; /* Ajusta este valor según tus necesidades */
+        height: 500px;
+        padding-bottom: 1%; /* Ajusta este valor según tus necesidades */
       }
       
       .responsive-iframe iframe {
@@ -141,7 +141,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 500px;
       }
 
         span a{

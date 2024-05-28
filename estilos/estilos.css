@@ -20,9 +20,8 @@ header .logo img {
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 3rem;
-    padding: 20px;
-    padding: 30px;
+    height: 2rem;
+    padding: 1.7rem 2rem;
   }
   header .logo img {
     height: 3.5rem;
@@ -42,8 +41,6 @@ header .logo img {
 
 .textVSL {
   text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
   color: white;
   font-size: 2rem;
 }
@@ -62,7 +59,8 @@ header .logo img {
 .responsive-iframe {
   position: relative;
   width: 100%;
-  padding-bottom: 40%; /* Ajusta este valor según tus necesidades */
+  padding-bottom: 40%;
+  /* Ajusta este valor según tus necesidades */
 }
 
 .responsive-iframe iframe {
@@ -71,6 +69,14 @@ header .logo img {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.TextBelowVideo {
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .cssbuttons-io {
@@ -135,20 +141,23 @@ header .logo img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
+    padding: 1rem;
     height: auto;
   }
   .vsl .textVSL {
     font-size: 1rem;
     color: rgb(255, 255, 255);
-    margin-left: 2px;
-    margin-right: 2px;
+  }
+  .vsl .TextBelowVideo {
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
   }
   .vsl .responsive-iframe {
     position: relative;
     width: 100%;
     height: 500px;
-    padding-bottom: 1%; /* Ajusta este valor según tus necesidades */
+    padding-bottom: 1%;
   }
   .vsl .responsive-iframe iframe {
     position: absolute;
@@ -375,12 +384,12 @@ form:hover {
 }
 
 .signin a:hover {
-  -webkit-text-decoration: underline royalblue;
-          text-decoration: underline royalblue;
+  -webkit-text-decoration: underline #c09951;
+          text-decoration: underline #c09951;
 }
 
 .signin a {
-  color: #00bfff;
+  color: #c09951;
 }
 
 .flex {
@@ -428,7 +437,7 @@ form:hover {
 
 .form label .input:focus + span,
 .form label .input:valid + span {
-  color: #00bfff;
+  color: #c09951;
   top: 0px;
   font-size: 0.7em;
   font-weight: 600;
@@ -582,7 +591,7 @@ form:hover {
 @media (max-width: 900px) {
   .bodyForm {
     display: flex;
-    padding: 0px;
+    padding: 0.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -709,6 +718,7 @@ form:hover {
     width: 100%;
   }
   .btnForm {
+    margin: 0 auto;
     font-family: inherit;
     font-size: 1rem;
     background: #c09951;

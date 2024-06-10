@@ -36,10 +36,30 @@
         gtag('config', 'G-CEPGH38HEZ');
     </script>
 
+
+    <!-- Google Tag Manager -->
+
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M3CVDX6C');</script>
+
+    <!-- End Google Tag Manager -->
+
+
     <title>Form</title>
 </head>
 
 <body class="bodyForm">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3CVDX6C" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Section Header -->
     <header>
@@ -143,16 +163,6 @@
             <span>Send</span>
         </button>
     </form>
-
-    <script>
-        document.getElementById('miFormulario').addEventListener('submit', function () {
-            gtag('event', 'Send_Form', {
-                'event_category': 'Form',
-                'event_action': 'Send Form',
-                'event_label': 'Contact Form'
-            });
-        });
-    </script>
 
 </body>
 

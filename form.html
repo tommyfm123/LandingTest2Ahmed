@@ -49,7 +49,13 @@
         })(window, document, 'script', 'dataLayer', 'GTM-M3CVDX6C');</script>
 
     <!-- End Google Tag Manager -->
-
+    <style>
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
 
     <title>Form</title>
 </head>
@@ -73,8 +79,9 @@
     <!-- form  -->
 
     <form class="form" action="https://api.web3forms.com/submit" method="POST" id="miFormulario">
-
+        <!-- this the key for the web 3 forms -->
         <input type="hidden" name="access_key" value="45eb4074-ae06-4e53-bcc3-6929f9ae8eaf">
+        <!-- end of key -->
 
         <p class="title">Book a consultation</p>
         <p class="message">Legal advice when you need it the most.</p>
@@ -128,28 +135,29 @@
             <span>Briefly describe your problem</span>
         </label>
         <p>Are you willing to commit AED 1,000 towards a comprehensive legal consultation?</p>
-        <label>
-            <div class="radio-button-container">
-                <div class="radio-button">
-                    <input type="radio" class="radio-button__input" id="radio1" name="moneyToInvest" value="Yes">
-                    <label class="radio-button__label" for="radio1">
-                        <span class="radio-button__custom"></span>
-                        Yes
-                    </label>
-                </div>
-                <div class="radio-button">
-                    <input type="radio" class="radio-button__input" id="radio2" name="moneyToInvest" value="No">
-                    <label class="radio-button__label" for="radio2">
-                        <span class="radio-button__custom"></span>
-                        No
-                    </label>
-                </div>
+        <div class="radio-button-container">
+            <div class="radio-button">
+                <input type="radio" class="radio-button__input" id="radio1" name="moneyToInvest" value="Yes" required>
+                <label class="radio-button__label" for="radio1">
+                    <span class="radio-button__custom"></span>
+                    Yes
+                </label>
             </div>
-        </label>
+            <div class="radio-button">
+                <input type="radio" class="radio-button__input" id="radio2" name="moneyToInvest" value="No" required>
+                <label class="radio-button__label" for="radio2">
+                    <span class="radio-button__custom"></span>
+                    No
+                </label>
+            </div>
+        </div>
+
+        <!-- Mensaje de error -->
+        <div id="radioError" class="error-message"></div>
 
         <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
-        <button class="btnForm" type="submit">
+        <button class="btnForm" type="submit" onclick="return validateForm()">
             <div class="svg-wrapper-1">
                 <div class="svg-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -163,6 +171,24 @@
             <span>Send</span>
         </button>
     </form>
+
+    <script>
+        function validateForm() {
+            var radio1 = document.getElementById('radio1');
+            var radio2 = document.getElementById('radio2');
+            var radioError = document.getElementById('radioError');
+
+            if (!radio1.checked && !radio2.checked) {
+                radioError.innerHTML = 'Please select Yes or No.';
+                radioError.style.display = 'block';
+                return false;
+            } else {
+                radioError.innerHTML = ''; // Limpiar mensaje de error si está seleccionado
+                radioError.style.display = 'none';
+                return true;
+            }
+        }
+    </script>
 
 </body>
 

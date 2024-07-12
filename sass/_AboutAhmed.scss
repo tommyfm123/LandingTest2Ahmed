@@ -1,0 +1,219 @@
+.AboutAhmed {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "socials socials"
+        "pictures textAhmed";
+}
+
+.tituloAboutAhmed {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.ProfileContainer {
+    display: flex;
+}
+
+.profilePicture {
+    grid-area: picture;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+    height: 35vw;
+    margin-right: 3rem;
+}
+
+.descriptionAhmed {
+    grid-area: textAhmed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    padding: 0 3rem;
+    justify-content: center;
+    text-align: left;
+}
+
+.descriptionAhmed .textDescription {
+    align-items: center;
+    font-weight: 300;
+}
+
+.card {
+    grid-area: socials;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem 1rem 2rem;
+    gap: 50px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.card .socialContainer {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s;
+}
+
+.card .socialContainer:hover {
+    transform: scale(1.1) translateY(-3px);
+}
+
+.card .socialContainer:active {
+    transform: scale(0.9);
+}
+
+.card .socialContainer .socialSvg {
+    width: 17px;
+}
+
+.card .socialContainer .socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.card .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+.viewsBloque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewsBloque .viewsText {
+    padding: 30px;
+    color: #d6b26a;
+    background: -webkit-linear-gradient(146deg, rgb(177, 148, 42) 0%, rgb(222, 196, 196) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 800;
+    user-select: none;
+}
+
+.viewsBloque .viewsText span {
+    font-weight: 800;
+}
+
+.viewsBloque .vl {
+    border-left: 1.5px solid rgb(152, 149, 149);
+    height: 3.5rem;
+}
+
+.FotoTikTok {
+    width: 100%;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design for screens <= 900px */
+@media (max-width: 900px) {
+    .AboutAhmed {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .tituloAboutAhmed {
+        font-size: 1.1rem;
+    }
+
+    .ProfileContainer {
+        display: flex;
+    }
+
+    .profilePicture {
+        height: 90vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .descriptionAhmed {
+        width: auto;
+        padding: 1rem;
+        font-size: 1rem;
+        float: none;
+    }
+
+    .FotoTikTok {
+        width: 45%;
+    }
+
+    .card {
+        padding: 1rem;
+        gap: 20px;
+    }
+
+    .card .socialContainer {
+        width: 30%;
+        height: auto;
+    }
+
+    .card .socialContainer:hover,
+    .card .socialContainer:active {
+        transform: none;
+    }
+
+    .viewsBloque .viewsText {
+        text-align: center;
+        padding: 0 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para MacBook Air (screens between 1280px and 1440px) */
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+    .AboutAhmed {
+        padding: 0 10rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .ProfileContainer {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .profilePicture {
+        height: 85%;
+        margin-right: 3rem;
+    }
+
+    .descriptionAhmed {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .descriptionAhmed .btnAhmed {
+        margin-top: 2rem;
+        height: 3.5rem;
+    }
+
+    .descriptionAhmed .btnAhmed span a {
+        font-weight: 700;
+        font-size: 1rem;
+    }
+}

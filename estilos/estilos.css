@@ -607,7 +607,8 @@ header .logo img {
 
 .BenefitsSection .containerBenefit {
   display: flex;
-  padding: 2rem 5rem;
+  max-width: 100%;
+  padding: 2rem 0;
   color: black;
   gap: 2rem;
 }
@@ -902,14 +903,14 @@ svg {
 
 .wrapper ul li span {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
 .TextAreasDescription {
-  color: white;
+  color: rgb(215, 215, 215);
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .wrapper .IconArrow {
@@ -1243,7 +1244,7 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem 0 5rem 0rem;
+  padding: 2rem 5rem 5rem 5rem;
 }
 
 .TitleHowitWorks {

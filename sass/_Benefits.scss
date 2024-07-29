@@ -20,7 +20,8 @@
 
 .BenefitsSection .containerBenefit {
     display: flex;
-    padding: 2rem 5rem;
+    max-width: 100%;
+    padding: 2rem 0;
     color: black;
     gap: 2rem;
 }

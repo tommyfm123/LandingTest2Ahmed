@@ -14,11 +14,11 @@ app.post('/send-event', async (req, res) => {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            "event_name": "Form filled out",
+            "event_name": "FormFilled",
             "event_time": Math.floor(Date.now() / 1000),
             "user_data": event.user_data,
             "custom_data": event.custom_data,
-            "event_source_url": event.event_source_url,
+            "event_source_url": "https://legal.miolawfirm.com",
             "action_source": "website"
         })
     });

@@ -562,6 +562,15 @@
     </script>
 
     <!-- Fin Convertions API -->
+
+
+    <!-- tracking leads -->
+    <script>
+        document.getElementById("purchase-btn").addEventListener("click", function () {
+            fbq('track', 'Lead'); // Evento de Lead se dispara al hacer clic en el botón
+        });
+    </script>
+    <!-- fin tracking leads -->
 </body>
 
 

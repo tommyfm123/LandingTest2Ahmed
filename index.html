@@ -537,40 +537,40 @@
     <!-- Convertions API -->
 
     <script>
-    document.getElementById('purchase-btn').addEventListener('click', function () {
-        fetch('http://localhost:3000/send-event', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                "event_name": "Lead", 
-                "user_data": {
-                    "em": "user_email_hash",
-                    "ph": "user_phone_hash"
+        document.getElementById('purchase-btn').addEventListener('click', function () {
+            fetch('http://localhost:3000/send-event', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
                 },
-                "custom_data": {
-                    "currency": "USD",
-                    "value": 23.07
-                },
-                "event_source_url": window.location.href
-            })
-        }).then(response => response.json())
-            .then(data => console.log(data))
-            .catch(error => console.error('Error:', error));
-    });
-</script>
+                body: JSON.stringify({
+                    "event_name": "lead",
+                    "user_data": {
+                        "em": "user_email_hash",
+                        "ph": "user_phone_hash"
+                    },
+                    "custom_data": {
+                        "currency": "USD",
+                        "value": 23.07
+                    },
+                    "event_source_url": window.location.href
+                })
+            }).then(response => response.json())
+                .then(data => console.log(data))
+                .catch(error => console.error('Error:', error));
+        });
+    </script>
 
 
     <!-- Fin Convertions API -->
 
 
     <!-- tracking leads -->
-    <script>
+    <!-- <script>
         document.getElementById("purchase-btn").addEventListener("click", function () {
             fbq('track', 'Lead'); // Evento de Lead se dispara al hacer clic en el botón
         });
-    </script>
+    </script> -->
     <!-- fin tracking leads -->
 </body>
 

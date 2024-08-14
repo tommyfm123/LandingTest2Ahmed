@@ -14,7 +14,7 @@ app.post('/send-event', async (req, res) => {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            "event_name": "FormFilled",
+            "event_name": "Lead",
             "event_time": Math.floor(Date.now() / 1000),
             "user_data": event.user_data,
             "custom_data": event.custom_data,

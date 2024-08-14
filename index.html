@@ -535,7 +535,6 @@
     <!-- fin lucky orange -->
 
     <!-- Convertions API -->
-
     <script>
         document.getElementById('lead-btn').addEventListener('click', function () {
             fetch('http://localhost:3000/send-event', {
@@ -549,10 +548,6 @@
                         "em": "user_email_hash",
                         "ph": "user_phone_hash"
                     },
-                    "custom_data": {
-                        "currency": "USD",
-                        "value": 23.07
-                    },
                     "event_source_url": window.location.href
                 })
             }).then(response => response.json())
@@ -560,9 +555,8 @@
                 .catch(error => console.error('Error:', error));
         });
     </script>
-
-
     <!-- Fin Convertions API -->
+
 
 
     <!-- tracking leads -->

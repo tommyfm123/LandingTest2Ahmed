@@ -537,27 +537,24 @@
     <!-- Convertions API -->
     <script>
         document.getElementById('lead-btn').addEventListener('click', function () {
-            fetch('http://localhost:3000/send-event', {
+            const data = {
+                event_name: 'Lead',
+                event_source_url: window.location.href
+            };
+
+            fetch('/send-lead', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({
-                    "event_name": "lead",
-                    "user_data": {
-                        "em": "user_email_hash",
-                        "ph": "user_phone_hash"
-                    },
-                    "event_source_url": window.location.href
-                })
-            }).then(response => response.json())
+                body: JSON.stringify(data)
+            })
+                .then(response => response.text())
                 .then(data => console.log(data))
                 .catch(error => console.error('Error:', error));
         });
     </script>
     <!-- Fin Convertions API -->
-
-
 
     <!-- tracking leads -->
     <!-- <script>

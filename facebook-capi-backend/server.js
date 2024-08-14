@@ -1,39 +1,44 @@
-require('dotenv').config();
 const express = require('express');
-const fetch = require('node-fetch');
+const axios = require('axios');
+const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+
+// Cargar variables de entorno desde el archivo .env
+dotenv.config();
+
 const app = express();
 
-app.use(express.json());
+app.use(bodyParser.json());
 
-app.post('/send-event', async (req, res) => {
+app.post('/send-lead', async (req, res) => {
     const event = req.body;
 
-    // Elimina `custom_data` para el evento `lead`
-    const eventPayload = {
-        "event_name": "lead",
-        "event_time": Math.floor(Date.now() / 1000),
-        "user_data": event.user_data,
-        "event_source_url": event.event_source_url,
-        "action_source": "website"
-    };
-
-    try {
-        const response = await fetch(`https://graph.facebook.com/v13.0/${process.env.PIXEL_ID}/events?access_token=${process.env.ACCESS_TOKEN}`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(eventPayload)
-        });
-
-        const result = await response.json();
-        res.send(result);
-    } catch (error) {
-        console.error('Error:', error);
-        res.status(500).send('Internal Server Error');
+    if (event.event_name === 'Lead') {
+        try {
+            const response = await axios.post(
+                `https://graph.facebook.com/v17.0/${process.env.FACEBOOK_PIXEL_ID}/events?access_token=${process.env.FACEBOOK_ACCESS_TOKEN}`,
+                {
+                    data: [{
+                        event_name: 'Lead',
+                        event_time: Math.floor(new Date() / 1000),
+                        custom_data: {
+                            // Campos value y currency no incluidos
+                        },
+                        event_source_url: event.event_source_url,
+                        action_source: 'website'
+                    }]
+                }
+            );
+            res.status(200).send('Lead event sent successfully.');
+        } catch (error) {
+            console.error('Error sending Lead event:', error.response.data);
+            res.status(500).send('Error sending Lead event.');
+        }
+    } else {
+        res.status(400).send('Invalid event type.');
     }
 });
 
 app.listen(3000, () => {
-    console.log('Server is running at 3000');
+    console.log('Server is running on port 3000');
 });

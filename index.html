@@ -543,7 +543,7 @@
             return config;
         }
 
-        document.querySelector('lead-btn').addEventListener('click', async () => {
+        document.getElementById('lead-btn').addEventListener('click', async () => {
             const { pixelId, accessToken } = await fetchConfig();
 
             const eventData = {
@@ -556,7 +556,8 @@
                     },
                     custom_data: {
 
-                    }
+                    },
+
                 }
             };
 

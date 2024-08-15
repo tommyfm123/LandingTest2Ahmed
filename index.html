@@ -537,21 +537,37 @@
 
     <!-- Convertions API -->
     <script>
-        document.getElementById('lead-btn').addEventListener('click', function () {
-            const data = {
-                event_name: 'Lead',
-                event_source_url: window.location.href
+        async function fetchConfig() {
+            const response = await fetch('/config');
+            const config = await response.json();
+            return config;
+        }
+
+        document.querySelector('lead-bin').addEventListener('click', async () => {
+            const { pixelId, accessToken } = await fetchConfig();
+
+            const eventData = {
+                data: {
+                    event_name: 'lead',
+                    event_time: Math.floor(Date.now() / 1000),
+                    event_source_url: window.location.href,
+                    user_data: {
+                        // Add user data if available
+                    },
+                    custom_data: {
+
+                    }
+                }
             };
 
-            fetch('/send-lead', {
+            fetch(`https://graph.facebook.com/v14.0/${pixelId}/events?access_token=${accessToken}`, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(data)
-            })
-                .then(response => response.text())
-                .then(data => console.log(data))
+                body: JSON.stringify(eventData),
+            }).then(response => response.json())
+                .then(data => console.log('Event tracked:', data))
                 .catch(error => console.error('Error:', error));
         });
     </script>

@@ -24,15 +24,14 @@
 
 .wrapper ul li span {
   color: white; // color texto
-  font-size: 1.3rem; // tamaño de texto
+  font-size: 1.5rem; // tamaño de texto
   font-weight: 500;
-  
 }
 
 .TextAreasDescription {
-  color: rgb(215, 215, 215);
+  color: white;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 200;
 
 }
 
@@ -45,7 +44,9 @@
 .wrapper .titleWrapper {
   color: white;
   text-align: center;
-  font-size: 35px;
+  font-size: 4.5rem;
+  margin: 2rem;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 500;
   padding: 0 30px;
 }
@@ -57,7 +58,7 @@
   margin: 0 auto;
 }
 
-.BtnMargin {
+#BtnMargin {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
@@ -98,7 +99,7 @@
   .wrapper .titleWrapper {
     color: white;
     text-align: center;
-    font-size: 25px;
+    font-size: 2.8rem;
     margin-bottom: .3rem;
 
   }

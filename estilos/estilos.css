@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 header {
   position: absolute; /* Posiciona el header en la parte superior de la página */
   top: 0; /* Alinea al borde superior */
@@ -57,7 +56,7 @@ header {
 .TituloVSL {
   color: white;
   font-weight: 600;
-  font-size: 6rem !important;
+  font-size: 8rem !important;
   margin-bottom: 0;
   filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.803));
 }
@@ -173,7 +172,8 @@ header {
   }
   /* Contenedor de los botones */
   #BotonContainer {
-    margin: 0.5rem 0;
+    margin: 0;
+    margin-top: 1.3rem;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -237,7 +237,7 @@ header {
   .TituloVSL {
     padding: 0 1rem;
     padding-top: 3.5rem;
-    font-size: 3.5rem !important;
+    font-size: 4rem !important;
   }
   .textVSL span {
     color: white;
@@ -319,8 +319,13 @@ header {
   margin-left: 5rem;
 }
 .AboutContainer .AboutUsTitle .TituloAbout {
+  text-align: center;
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", sans-serif;
 }
 .AboutContainer .bloque2 {
   width: 80%;
@@ -402,10 +407,10 @@ header {
     padding: 0;
   }
   .AboutContainer .AboutUsTitle .TituloAbout {
-    font-size: 25px;
     padding: 0;
     height: auto;
     margin: 0;
+    font-size: 2.8rem;
   }
   .AboutContainer .bloque2 {
     width: auto;
@@ -673,8 +678,9 @@ header {
 }
 
 .BenefitsSection .titleBenefit {
-  font-size: 4rem;
-  margin: 2rem;
+  font-size: 3.4rem;
+  margin: 0;
+  margin-top: 2rem;
   font-weight: 500;
   color: white;
   font-family: "Bebas Neue", sans-serif;
@@ -683,19 +689,21 @@ header {
 .BenefitsSection .descriptionBenefit {
   font-size: 1.3rem;
   color: rgb(203, 198, 198);
+  margin: 1rem 0;
 }
 
 .BenefitsSection .containerBenefit {
   display: flex;
-  padding: 2rem 5rem;
+  padding: 2rem;
   color: black;
   gap: 2rem;
+  max-width: 100%;
 }
 
 .BenefitsSection .containerBenefit .benefitBox {
   color: #49505A;
   background-color: #dcdcdc;
-  border-radius: 2rem;
+  border-radius: 1.3rem;
   transition: all 0.2s ease;
   width: 390px;
   height: 250px;
@@ -728,11 +736,13 @@ header {
     padding: 0 1rem;
   }
   .BenefitsSection .titleBenefit {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     margin: 1.5rem 0;
   }
   .BenefitsSection .descriptionBenefit {
     font-size: 1rem;
+    margin: 0;
+    margin-bottom: 1rem;
   }
   .BenefitsSection .containerBenefit {
     flex-direction: row;
@@ -813,7 +823,7 @@ header {
 }
 
 .titleQuestions {
-  font-size: 4rem;
+  font-size: 3.4rem;
   font-weight: 500;
   color: rgb(214, 178, 106);
   background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(123, 80, 24) 100%);
@@ -1003,7 +1013,7 @@ svg {
 .wrapper .titleWrapper {
   color: white;
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 3.2rem;
   margin: 2rem;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 500;
@@ -1053,7 +1063,7 @@ svg {
   .wrapper .titleWrapper {
     color: white;
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     margin-bottom: 0.3rem;
   }
   .wrapper .column-list {
@@ -1073,7 +1083,7 @@ svg {
     font-size: 1.4rem;
   }
   .wrapper .titleWrapper {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
   .wrapper .column-list {
     padding: 2rem;
@@ -1095,6 +1105,7 @@ svg {
   grid-template-columns: repeat(2, 1fr);
   margin: 0 5rem;
   transform: scale(0.9);
+  justify-content: center;
 }
 
 .btnContainer {
@@ -1112,11 +1123,11 @@ svg {
 
 .TitleTestimonialContainer {
   color: white;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 500;
   padding: 0 4rem;
   text-align: center;
-  margin: 2rem 0 1rem;
+  margin: 2rem 0;
   font-family: "Bebas Neue", sans-serif;
 }
 
@@ -1194,63 +1205,6 @@ svg {
   margin: 2rem 0;
 }
 
-.outerdiv {
-  width: auto;
-  min-height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  /* Ajustar el padding lateral */
-  padding-top: 2rem;
-}
-
-.innerdiv {
-  justify-content: center;
-  transform: scale(0.9);
-  margin: 0 5rem;
-  display: grid;
-  grid-gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-}
-
-.btnContainer {
-  grid-column: 1/-1;
-  /* Toma el ancho completo */
-  display: flex;
-  justify-content: center;
-  /* Centrar el botón */
-  margin-top: 1rem;
-  margin-bottom: 0;
-  height: auto;
-}
-
-.btnTestimonio {
-  height: 5rem;
-  text-align: center;
-}
-
-.TitleTestimonialContainer {
-  color: white;
-  font-size: 4rem;
-  font-weight: 500;
-  padding: 0 4rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-family: "Bebas Neue", sans-serif;
-}
-
-.eachdiv {
-  padding: 1.5rem 2.5rem;
-  border-radius: 0.8rem;
-  box-shadow: 5px 5px 20px rgba(109, 107, 107, 0.4196078431);
-  color: black;
-  background: #dcdcdc;
-}
-
 .div1 {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -1266,93 +1220,6 @@ svg {
   grid-row: 2/3;
 }
 
-.userdetails {
-  display: flex;
-}
-
-.imgbox {
-  margin-right: 1rem;
-}
-
-.imgbox img {
-  border-radius: 50%;
-  width: 2rem;
-  border: 2px solid #cec5c5;
-}
-
-.detbox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.detbox p {
-  margin: 0;
-}
-
-.detbox .name {
-  color: #49505A;
-  font-size: 1rem;
-  margin-bottom: 0.1rem;
-  font-weight: 600;
-}
-
-.detbox .name.dark {
-  color: #49505A;
-}
-
-.detbox .designation {
-  color: #49505A;
-  opacity: 50%;
-  font-size: 0.9rem;
-}
-
-.detbox .designation.dark {
-  color: #49505A;
-}
-
-.review h4 {
-  font-size: 1.4rem;
-  color: #000000;
-  font-weight: 600;
-  line-height: 1.5;
-  margin-bottom: 0.8rem;
-}
-
-.review.dark h4 {
-  color: #4B5258;
-}
-
-.review p {
-  font-size: 1.1rem;
-  color: #000000;
-  font-weight: 500;
-  opacity: 50%;
-  line-height: 1.5;
-}
-
-.review.dark p {
-  color: #0e0e0e;
-}
-
-.attribution {
-  font-size: 1rem;
-  line-height: 1.5;
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  text-align: right;
-}
-
-.attribution a {
-  text-decoration: none;
-}
-
-.cssbuttons-io {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 @media only screen and (max-width: 1000px) {
   .innerdiv {
     transform: scale(0.7);
@@ -1363,7 +1230,6 @@ svg {
     transform: scale(0.6);
   }
   .TitleTestimonialContainer {
-    color: white;
     font-size: 1rem;
     font-weight: 600;
     padding: 0 4rem;
@@ -1372,9 +1238,6 @@ svg {
   }
 }
 @media only screen and (max-width: 600px) {
-  .div1 {
-    background-position-x: 10rem;
-  }
   .innerdiv {
     display: flex;
     flex-direction: column;
@@ -1387,13 +1250,6 @@ svg {
     font-size: 2rem;
     padding: 0 2rem;
   }
-  .attribution {
-    position: relative;
-  }
-  .TitleTestimonialContainer {
-    font-size: 2.2rem;
-    padding: 0 4.7rem;
-  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .innerdiv {
@@ -1405,10 +1261,6 @@ svg {
   }
   .btnContainer {
     margin-top: 0rem;
-    /* Reduce el margen superior del botón en móviles */
-  }
-  .attribution {
-    position: relative;
   }
   .TitleTestimonialContainer {
     font-size: 2rem;
@@ -1489,7 +1341,7 @@ svg {
   }
   .TitleHowitWorks {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
   }
   .StepTitle {
@@ -1549,11 +1401,11 @@ svg {
 @media (min-width: 1000px) and (max-width: 1450px) {
   .HowitWorksContainer {
     display: flex;
-    padding: 2rem 5rem;
+    padding: 2rem;
   }
   .TitleHowitWorks {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.3rem;
     font-weight: 500;
     color: white;
     margin: 0;
@@ -1572,6 +1424,9 @@ svg {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 0 5rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
   }
   .cardWork {
     border: 2px #af8f4e solid;

@@ -71,7 +71,7 @@
 
     .TitleHowitWorks {
         text-align: center;
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: white;
     }
 
@@ -147,13 +147,13 @@
     .HowitWorksContainer {
         display: flex;
 
-        padding: 2rem 5rem;
+        padding: 2rem;
     
     }
     
     .TitleHowitWorks {
         text-align: center;
-        font-size: 4rem;
+        font-size: 3.3rem;
         font-weight: 500;
         color: white;
         margin: 0;
@@ -175,6 +175,9 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        padding: 0 5rem;
+        max-width: 100%;
+        margin-bottom: 2rem;
     }
     
     .cardWork {

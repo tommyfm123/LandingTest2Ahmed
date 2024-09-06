@@ -64,6 +64,40 @@
   color: white;
 }
 
+// /* Contenedor de los botones */
+// #BotonContainer {
+//   margin: 0.5rem 0;
+//   gap: 20px;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+// }
+
+// /* Estilos de los botones */
+// .button {
+
+//   padding: 18px 40px;
+//   border: none;
+//   margin-top: 2rem;
+//   outline: none;
+//   font-family: "Poppins", sans-serif;
+//   background-color: #ededed;
+//   color: black;
+//   border-radius: 9px;
+//   font-weight: 600;
+//   font-size: 1rem;
+//   cursor: pointer;
+//   transition: all 0.25s ease-out;
+// }
+
+// .button:hover {
+//   transform: translateY(-3px);
+// }
+
+// .button-span {
+//   color: #5c5a5a;
+// }
+
 /* Contenedor de los botones */
 #BotonContainer {
   margin: 0.5rem 0;
@@ -75,7 +109,6 @@
 
 /* Estilos de los botones */
 .button {
-
   padding: 18px 40px;
   border: none;
   margin-top: 2rem;
@@ -88,8 +121,16 @@
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.25s ease-out;
+
+  /* Animación de sacudida con ciclo de 5 segundos y descanso de 15 segundos */
+  animation: shakeRotation 4s ease-in-out 1 forwards;
+  animation-delay: 0s; /* Comienza inmediatamente */
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
 }
 
+/* Estilos hover */
 .button:hover {
   transform: translateY(-3px);
 }
@@ -97,6 +138,41 @@
 .button-span {
   color: #5c5a5a;
 }
+
+/* Animación de sacudida usando rotación */
+@keyframes shakeRotation {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-1.5deg);
+  }
+  20% {
+    transform: rotate(1.5deg);
+  }
+  30% {
+    transform: rotate(-1.5deg);
+  }
+  40% {
+    transform: rotate(1.5deg);
+  }
+  50% {
+    transform: rotate(-1.5deg);
+  }
+  60% {
+    transform: rotate(1.5deg);
+  }
+  70% {
+    transform: rotate(-1.5deg);
+  }
+  80% {
+    transform: rotate(1.5deg);
+  }
+  90% {
+    transform: rotate(-1.5deg);
+  }
+}
+
 
 /* Contenedor de la imagen de Ahmed y su hermano */
 .ahmedYhermano {

@@ -110,8 +110,15 @@ header {
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.25s ease-out;
+  /* Animación de sacudida con ciclo de 5 segundos y descanso de 15 segundos */
+  animation: shakeRotation 4s ease-in-out 1 forwards;
+  animation-delay: 0s; /* Comienza inmediatamente */
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
 }
 
+/* Estilos hover */
 .button:hover {
   transform: translateY(-3px);
 }
@@ -120,6 +127,39 @@ header {
   color: #5c5a5a;
 }
 
+/* Animación de sacudida usando rotación */
+@keyframes shakeRotation {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-1.5deg);
+  }
+  20% {
+    transform: rotate(1.5deg);
+  }
+  30% {
+    transform: rotate(-1.5deg);
+  }
+  40% {
+    transform: rotate(1.5deg);
+  }
+  50% {
+    transform: rotate(-1.5deg);
+  }
+  60% {
+    transform: rotate(1.5deg);
+  }
+  70% {
+    transform: rotate(-1.5deg);
+  }
+  80% {
+    transform: rotate(1.5deg);
+  }
+  90% {
+    transform: rotate(-1.5deg);
+  }
+}
 /* Contenedor de la imagen de Ahmed y su hermano */
 .ahmedYhermano {
   display: none;

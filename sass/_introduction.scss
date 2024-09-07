@@ -21,6 +21,8 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
+
+
 /* Estilos para los títulos */
 .TituloVSL {
   color: white;
@@ -61,8 +63,21 @@
   font-size: 2.5rem;
   // text-align: left;
   text-align: center;
-  color: white;
+  color: rgb(221, 215, 215);
 }
+
+#MobileOut .descriptionHighlight {
+  color: #d6b26a;
+  background: -webkit-linear-gradient(146deg,
+  rgba(255, 233, 152, 1) 0%,
+  rgba(213, 189, 117, 1) 8%,
+  rgb(217, 152, 67) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.803));
+  font-weight: 500;
+}
+
 
 // /* Contenedor de los botones */
 // #BotonContainer {
@@ -220,7 +235,7 @@
   .TituloVSL {
     padding: 0 0rem;
     padding-top:3.5rem ;
-    font-size: 3.4rem !important;
+    font-size: 3rem !important;
   }
 
   .textVSL span {

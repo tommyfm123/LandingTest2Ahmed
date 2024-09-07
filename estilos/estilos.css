@@ -84,7 +84,16 @@ header {
   padding: 0 20rem;
   font-size: 2.5rem;
   text-align: center;
-  color: white;
+  color: rgb(221, 215, 215);
+}
+
+#MobileOut .descriptionHighlight {
+  color: #d6b26a;
+  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(217, 152, 67) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.803));
+  font-weight: 500;
 }
 
 /* Contenedor de los botones */
@@ -190,7 +199,7 @@ header {
   .TituloVSL {
     padding: 0 0rem;
     padding-top: 3.5rem;
-    font-size: 3.4rem !important;
+    font-size: 3rem !important;
   }
   .textVSL span {
     color: white;

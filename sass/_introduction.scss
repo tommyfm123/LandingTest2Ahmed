@@ -21,6 +21,15 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
+.subtextIntro{
+  color: white;
+  position: absolute;
+  text-align: center;
+
+  bottom: 70px;
+  font-size: .8rem;
+}
+
 
 
 /* Estilos para los títulos */
@@ -233,6 +242,15 @@
     max-width: 100%;
   }
 
+  .subtextIntro{
+    color: white;
+    position: absolute;
+    text-align: center;
+  
+    bottom: 70px;
+    font-size: .7rem;
+  }
+
   /* Estilos para los títulos */
   .TituloVSL {
     padding: 0;
@@ -258,7 +276,7 @@
 
   #MobileOut {
     padding: 0 2rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-align: center;
     color: white;
     padding-bottom: .5rem;

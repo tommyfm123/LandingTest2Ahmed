@@ -52,6 +52,14 @@ header {
   font-family: "Bebas Neue", sans-serif;
 }
 
+.subtextIntro {
+  color: white;
+  position: absolute;
+  text-align: center;
+  bottom: 70px;
+  font-size: 0.8rem;
+}
+
 /* Estilos para los títulos */
 .TituloVSL {
   color: white;
@@ -197,6 +205,13 @@ header {
     padding-top: 0; /* Asegura que el texto esté debajo de la imagen */
     max-width: 100%;
   }
+  .subtextIntro {
+    color: white;
+    position: absolute;
+    text-align: center;
+    bottom: 70px;
+    font-size: 0.7rem;
+  }
   /* Estilos para los títulos */
   .TituloVSL {
     padding: 0;
@@ -216,7 +231,7 @@ header {
   }
   #MobileOut {
     padding: 0 2rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-align: center;
     color: white;
     padding-bottom: 0.5rem;

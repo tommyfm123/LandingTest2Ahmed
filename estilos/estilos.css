@@ -191,15 +191,17 @@ header {
   }
   /* Estilos para el contenedor de texto VSL */
   .textVSL {
-    width: 100%;
+    width: auto;
+    padding: 0.3rem;
     text-align: center; /* Centra el texto */
     padding-top: 0; /* Asegura que el texto esté debajo de la imagen */
+    max-width: 100%;
   }
   /* Estilos para los títulos */
   .TituloVSL {
-    padding: 0 0rem;
-    padding-top: 3.5rem;
-    font-size: 2.8rem !important;
+    padding: 0;
+    padding-top: 0;
+    font-size: 3rem !important;
   }
   .textVSL span {
     color: white;
@@ -214,7 +216,7 @@ header {
   }
   #MobileOut {
     padding: 0 2rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-align: center;
     color: white;
     padding-bottom: 0.5rem;
@@ -1039,6 +1041,8 @@ svg {
   display: flex;
   justify-content: left;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper ul li span {
@@ -1049,14 +1053,20 @@ svg {
 
 .TextAreasDescription {
   color: white;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 200;
+}
+
+.iconExpertise {
+  display: flex;
+  align-items: start;
+  height: 9.8vh;
 }
 
 .wrapper .IconArrow {
   color: rgb(214, 178, 106);
-  font-size: 2rem;
-  margin-right: 0.5rem;
+  font-size: 2.3rem;
+  margin-right: 0.9rem;
 }
 
 .wrapper .titleWrapper {
@@ -1104,15 +1114,23 @@ svg {
     font-size: 1rem;
   }
   .wrapper .IconArrow {
-    font-size: 30px !important;
+    font-size: 25px !important;
     margin-right: 0.8rem !important;
     align-items: baseline;
     min-width: 30px;
   }
+  .iconExpertise {
+    height: 12vh;
+  }
+  .TextAreasDescription {
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+  }
   .wrapper .titleWrapper {
     color: white;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin-bottom: 0.3rem;
   }
   .wrapper .column-list {

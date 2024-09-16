@@ -37,12 +37,15 @@ header {
 .vsl {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 0rem 10rem;
   height: 100vh;
   background-image: linear-gradient(to bottom, rgba(34, 32, 31, 0) 10%, #22201F 100%), url(../images/MIOlaw1.webp);
-  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-  background-position: center; /* Centra la imagen */
+  background-size: cover;
+  /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center;
+  /* Centra la imagen */
 }
 
 /* Estilos para el contenedor de texto VSL */
@@ -54,9 +57,8 @@ header {
 
 .subtextIntro {
   color: white;
-  position: absolute;
   text-align: center;
-  bottom: 70px;
+  padding: 2rem 0rem;
   font-size: 0.8rem;
 }
 
@@ -64,7 +66,7 @@ header {
 .TituloVSL {
   color: white;
   font-weight: 600;
-  font-size: 8rem !important;
+  font-size: 6rem !important;
   margin-bottom: 0;
   filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.803));
 }
@@ -129,7 +131,8 @@ header {
   transition: all 0.25s ease-out;
   /* Animación de sacudida con ciclo de 5 segundos y descanso de 15 segundos */
   animation: shakeRotation 4s ease-in-out 1 forwards;
-  animation-delay: 0s; /* Comienza inmediatamente */
+  animation-delay: 0s;
+  /* Comienza inmediatamente */
   animation-iteration-count: infinite;
   animation-play-state: running;
   animation-timing-function: ease-in-out;
@@ -177,23 +180,21 @@ header {
     transform: rotate(-1.5deg);
   }
 }
-/* Contenedor de la imagen de Ahmed y su hermano */
-.ahmedYhermano {
-  display: none;
-}
-
-/* Imagen dentro del contenedor */
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 1000px) {
   /* Estilos generales para la sección VSL */
   .vsl {
     display: flex;
-    flex-direction: column; /* Cambia la dirección del flex a columna */
+    flex-direction: column;
+    /* Cambia la dirección del flex a columna */
     align-items: center;
-    padding: 0rem 0rem; /* Aleja los textos */
+    padding: 0rem 0rem;
+    /* Aleja los textos */
     background-image: linear-gradient(to bottom, rgba(34, 32, 31, 0) 10%, #22201F 100%), url(../images/MIOlaw1.webp);
-    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-    background-position: center; /* Centra la imagen */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
     height: 100vh;
     position: relative;
   }
@@ -201,8 +202,10 @@ header {
   .textVSL {
     width: auto;
     padding: 0.3rem;
-    text-align: center; /* Centra el texto */
-    padding-top: 0; /* Asegura que el texto esté debajo de la imagen */
+    text-align: center;
+    /* Centra el texto */
+    padding-top: 0;
+    /* Asegura que el texto esté debajo de la imagen */
     max-width: 100%;
   }
   .subtextIntro {
@@ -267,15 +270,21 @@ header {
   /* Contenedor de la imagen de Ahmed y su hermano */
   .ahmedYhermano {
     position: absolute;
-    top: 90px; /* Ajusta la posición para que esté arriba del texto */
-    right: 35px; /* Ajusta la posición desde la derecha en pantallas pequeñas */
-    width: 80%; /* Ajusta el ancho de la imagen para que ocupe todo el contenedor */
+    top: 90px;
+    /* Ajusta la posición para que esté arriba del texto */
+    right: 35px;
+    /* Ajusta la posición desde la derecha en pantallas pequeñas */
+    width: 80%;
+    /* Ajusta el ancho de la imagen para que ocupe todo el contenedor */
   }
   .ahmedYhermano img {
-    height: 180px; /* Ajusta la altura de la imagen en pantallas pequeñas */
-    width: 98%; /* Asegura que la imagen ocupe el ancho completo */
+    height: 180px;
+    /* Ajusta la altura de la imagen en pantallas pequeñas */
+    width: 98%;
+    /* Asegura que la imagen ocupe el ancho completo */
     -o-object-fit: cover;
-       object-fit: cover; /* Mantiene la proporción de la imagen */
+       object-fit: cover;
+    /* Mantiene la proporción de la imagen */
     border-bottom: 7px #d6b26a solid;
   }
 }
@@ -284,20 +293,26 @@ header {
   /* Estilos generales para la sección VSL */
   .vsl {
     display: flex;
-    flex-direction: column; /* Cambia la dirección del flex a columna */
+    flex-direction: column;
+    /* Cambia la dirección del flex a columna */
     align-items: center;
-    padding: 0rem 0rem; /* Aleja los textos */
+    padding: 0rem 0rem;
+    /* Aleja los textos */
     background-image: linear-gradient(to bottom, rgba(34, 32, 31, 0) 10%, #22201F 100%), url(../images/MIOlaw1.webp);
-    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-    background-position: center; /* Centra la imagen */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
     height: 100vh;
     position: relative;
   }
   /* Estilos para el contenedor de texto VSL */
   .textVSL {
     width: 100%;
-    text-align: center; /* Centra el texto */
-    padding-top: 0; /* Asegura que el texto esté debajo de la imagen */
+    text-align: center;
+    /* Centra el texto */
+    padding-top: 0;
+    /* Asegura que el texto esté debajo de la imagen */
   }
   /* Estilos para los títulos */
   .TituloVSL {
@@ -352,15 +367,21 @@ header {
   /* Contenedor de la imagen de Ahmed y su hermano */
   .ahmedYhermano {
     position: absolute;
-    top: 90px; /* Ajusta la posición para que esté arriba del texto */
-    right: 35px; /* Ajusta la posición desde la derecha en pantallas pequeñas */
-    width: 80%; /* Ajusta el ancho de la imagen para que ocupe todo el contenedor */
+    top: 90px;
+    /* Ajusta la posición para que esté arriba del texto */
+    right: 35px;
+    /* Ajusta la posición desde la derecha en pantallas pequeñas */
+    width: 80%;
+    /* Ajusta el ancho de la imagen para que ocupe todo el contenedor */
   }
   .ahmedYhermano img {
-    height: 180px; /* Ajusta la altura de la imagen en pantallas pequeñas */
-    width: 98%; /* Asegura que la imagen ocupe el ancho completo */
+    height: 180px;
+    /* Ajusta la altura de la imagen en pantallas pequeñas */
+    width: 98%;
+    /* Asegura que la imagen ocupe el ancho completo */
     -o-object-fit: cover;
-       object-fit: cover; /* Mantiene la proporción de la imagen */
+       object-fit: cover;
+    /* Mantiene la proporción de la imagen */
     border-bottom: 7px #d6b26a solid;
   }
 }

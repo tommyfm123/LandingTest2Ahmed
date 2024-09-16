@@ -2,13 +2,16 @@
 .vsl {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 0rem 10rem;
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(34, 32, 31, 0) 10%, #22201F 100%), 
-                    url(../images/MIOlaw1.webp);
-  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-  background-position: center; /* Centra la imagen */
+  background-image: linear-gradient(to bottom, rgba(34, 32, 31, 0) 10%, #22201F 100%),
+    url(../images/MIOlaw1.webp);
+  background-size: cover;
+  /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center;
+  /* Centra la imagen */
 }
 
 
@@ -21,12 +24,10 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
-.subtextIntro{
+.subtextIntro {
   color: white;
-  position: absolute;
   text-align: center;
-
-  bottom: 70px;
+  padding: 2rem 0rem;
   font-size: .8rem;
 }
 
@@ -37,7 +38,7 @@
   color: white;
   font-weight: 600;
   // font-size: 4rem !important;
-  font-size: 8rem !important;
+  font-size: 6rem !important;
   margin-bottom: 0;
   filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.803));
 }
@@ -58,9 +59,9 @@
   font-size: 2rem;
   color: #d6b26a;
   background: -webkit-linear-gradient(146deg,
-  rgba(255, 233, 152, 1) 0%,
-  rgba(213, 189, 117, 1) 8%,
-  rgb(217, 152, 67) 100%);
+      rgba(255, 233, 152, 1) 0%,
+      rgba(213, 189, 117, 1) 8%,
+      rgb(217, 152, 67) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.803));
@@ -78,9 +79,9 @@
 #MobileOut .descriptionHighlight {
   color: #d6b26a;
   background: -webkit-linear-gradient(146deg,
-  rgba(255, 233, 152, 1) 0%,
-  rgba(213, 189, 117, 1) 8%,
-  rgb(217, 152, 67) 100%);
+      rgba(255, 233, 152, 1) 0%,
+      rgba(213, 189, 117, 1) 8%,
+      rgb(217, 152, 67) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.803));
@@ -88,39 +89,6 @@
 }
 
 
-// /* Contenedor de los botones */
-// #BotonContainer {
-//   margin: 0.5rem 0;
-//   gap: 20px;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-// }
-
-// /* Estilos de los botones */
-// .button {
-
-//   padding: 18px 40px;
-//   border: none;
-//   margin-top: 2rem;
-//   outline: none;
-//   font-family: "Poppins", sans-serif;
-//   background-color: #ededed;
-//   color: black;
-//   border-radius: 9px;
-//   font-weight: 600;
-//   font-size: 1rem;
-//   cursor: pointer;
-//   transition: all 0.25s ease-out;
-// }
-
-// .button:hover {
-//   transform: translateY(-3px);
-// }
-
-// .button-span {
-//   color: #5c5a5a;
-// }
 
 /* Contenedor de los botones */
 #BotonContainer {
@@ -148,7 +116,8 @@
 
   /* Animación de sacudida con ciclo de 5 segundos y descanso de 15 segundos */
   animation: shakeRotation 4s ease-in-out 1 forwards;
-  animation-delay: 0s; /* Comienza inmediatamente */
+  animation-delay: 0s;
+  /* Comienza inmediatamente */
   animation-iteration-count: infinite;
   animation-play-state: running;
   animation-timing-function: ease-in-out;
@@ -165,70 +134,68 @@
 
 /* Animación de sacudida usando rotación */
 @keyframes shakeRotation {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(-1.5deg);
   }
+
   20% {
     transform: rotate(1.5deg);
   }
+
   30% {
     transform: rotate(-1.5deg);
   }
+
   40% {
     transform: rotate(1.5deg);
   }
+
   50% {
     transform: rotate(-1.5deg);
   }
+
   60% {
     transform: rotate(1.5deg);
   }
+
   70% {
     transform: rotate(-1.5deg);
   }
+
   80% {
     transform: rotate(1.5deg);
   }
+
   90% {
     transform: rotate(-1.5deg);
   }
 }
 
 
-/* Contenedor de la imagen de Ahmed y su hermano */
-.ahmedYhermano {
-  display: none;
-  // position: absolute; /* Asegura que esté posicionado correctamente */
-  // top: 314px; /* Ajusta la posición desde la parte superior del contenedor */
-  // right: 100px; /* Ajusta la posición desde la derecha del contenedor */
-  // max-width: 100%;
-  // height: 900px;
-  // z-index: 10; /* Asegura que esté encima de otros elementos */
-}
-
-/* Imagen dentro del contenedor */
-// .ahmedYhermano img {
-//   width: 100%;
-//   image-rendering: optimizeQuality;
-//   height: 470px; /* Ajusta la altura de la imagen */
-//   object-fit: cover;
-//   filter: sepia(0%) hue-rotate(90deg) saturate(0%);}
 
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 1000px) {
+
   /* Estilos generales para la sección VSL */
   .vsl {
     display: flex;
-    flex-direction: column; /* Cambia la dirección del flex a columna */
+    flex-direction: column;
+    /* Cambia la dirección del flex a columna */
     align-items: center;
-    padding: 0rem 0rem; /* Aleja los textos */
-    background-image: linear-gradient(to bottom, rgba(34, 32, 31, 0) 10%, #22201F 100%), 
-                    url(../images/MIOlaw1.webp);
-  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-  background-position: center; /* Centra la imagen */
+    padding: 0rem 0rem;
+    /* Aleja los textos */
+    background-image: linear-gradient(to bottom, rgba(34, 32, 31, 0) 10%, #22201F 100%),
+      url(../images/MIOlaw1.webp);
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
     height: 100vh;
     position: relative;
   }
@@ -237,16 +204,18 @@
   .textVSL {
     width: auto;
     padding: .3rem;
-    text-align: center; /* Centra el texto */
-    padding-top: 0; /* Asegura que el texto esté debajo de la imagen */
+    text-align: center;
+    /* Centra el texto */
+    padding-top: 0;
+    /* Asegura que el texto esté debajo de la imagen */
     max-width: 100%;
   }
 
-  .subtextIntro{
+  .subtextIntro {
     color: white;
     position: absolute;
     text-align: center;
-  
+
     bottom: 70px;
     font-size: .7rem;
   }
@@ -254,7 +223,7 @@
   /* Estilos para los títulos */
   .TituloVSL {
     padding: 0;
-    padding-top:0 ;
+    padding-top: 0;
     font-size: 2.8rem !important;
   }
 
@@ -317,33 +286,44 @@
   /* Contenedor de la imagen de Ahmed y su hermano */
   .ahmedYhermano {
     position: absolute;
-    top: 90px; /* Ajusta la posición para que esté arriba del texto */
-    right: 35px; /* Ajusta la posición desde la derecha en pantallas pequeñas */
-    width: 80%; /* Ajusta el ancho de la imagen para que ocupe todo el contenedor */
-    
+    top: 90px;
+    /* Ajusta la posición para que esté arriba del texto */
+    right: 35px;
+    /* Ajusta la posición desde la derecha en pantallas pequeñas */
+    width: 80%;
+    /* Ajusta el ancho de la imagen para que ocupe todo el contenedor */
+
   }
 
   .ahmedYhermano img {
-    height: 180px; /* Ajusta la altura de la imagen en pantallas pequeñas */
-    width: 98%; /* Asegura que la imagen ocupe el ancho completo */
-    object-fit: cover; /* Mantiene la proporción de la imagen */
+    height: 180px;
+    /* Ajusta la altura de la imagen en pantallas pequeñas */
+    width: 98%;
+    /* Asegura que la imagen ocupe el ancho completo */
+    object-fit: cover;
+    /* Mantiene la proporción de la imagen */
     border-bottom: 7px #d6b26a solid;
-    
+
   }
 }
 
 /* Ajustes para pantallas pequeñas */
 @media (min-width: 1100px) and (max-width: 1450px) {
+
   /* Estilos generales para la sección VSL */
   .vsl {
     display: flex;
-    flex-direction: column; /* Cambia la dirección del flex a columna */
+    flex-direction: column;
+    /* Cambia la dirección del flex a columna */
     align-items: center;
-    padding: 0rem 0rem; /* Aleja los textos */
-    background-image: linear-gradient(to bottom, rgba(34, 32, 31, 0) 10%, #22201F 100%), 
-                    url(../images/MIOlaw1.webp);
-  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-  background-position: center; /* Centra la imagen */
+    padding: 0rem 0rem;
+    /* Aleja los textos */
+    background-image: linear-gradient(to bottom, rgba(34, 32, 31, 0) 10%, #22201F 100%),
+      url(../images/MIOlaw1.webp);
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
     height: 100vh;
     position: relative;
   }
@@ -351,14 +331,16 @@
   /* Estilos para el contenedor de texto VSL */
   .textVSL {
     width: 100%;
-    text-align: center; /* Centra el texto */
-    padding-top: 0; /* Asegura que el texto esté debajo de la imagen */
+    text-align: center;
+    /* Centra el texto */
+    padding-top: 0;
+    /* Asegura que el texto esté debajo de la imagen */
   }
 
   /* Estilos para los títulos */
   .TituloVSL {
     padding: 0 1rem;
-    padding-top:3.5rem ;
+    padding-top: 3.5rem;
     font-size: 4rem !important;
   }
 
@@ -419,17 +401,23 @@
   /* Contenedor de la imagen de Ahmed y su hermano */
   .ahmedYhermano {
     position: absolute;
-    top: 90px; /* Ajusta la posición para que esté arriba del texto */
-    right: 35px; /* Ajusta la posición desde la derecha en pantallas pequeñas */
-    width: 80%; /* Ajusta el ancho de la imagen para que ocupe todo el contenedor */
-    
+    top: 90px;
+    /* Ajusta la posición para que esté arriba del texto */
+    right: 35px;
+    /* Ajusta la posición desde la derecha en pantallas pequeñas */
+    width: 80%;
+    /* Ajusta el ancho de la imagen para que ocupe todo el contenedor */
+
   }
 
   .ahmedYhermano img {
-    height: 180px; /* Ajusta la altura de la imagen en pantallas pequeñas */
-    width: 98%; /* Asegura que la imagen ocupe el ancho completo */
-    object-fit: cover; /* Mantiene la proporción de la imagen */
+    height: 180px;
+    /* Ajusta la altura de la imagen en pantallas pequeñas */
+    width: 98%;
+    /* Asegura que la imagen ocupe el ancho completo */
+    object-fit: cover;
+    /* Mantiene la proporción de la imagen */
     border-bottom: 7px #d6b26a solid;
-    
+
   }
 }

@@ -1,0 +1,59 @@
+header a img{
+    height: 40px;
+}
+
+.ThanksPage{
+    height: 100vh;
+    padding: 0 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.ThanksPage h2 {
+    font-size: 3.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    color: #d6b26a;
+    background: -webkit-linear-gradient(146deg, rgb(177, 148, 42) 0%, rgb(220, 205, 160) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.05em; /* Slight spacing for elegance */
+    filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.476));
+}
+
+.ThanksPage p{
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    line-height: 35px;
+    // font-family: "Bebas Neue", sans-serif;
+    
+}
+
+
+/* Estilos de los botones */
+.buttonThanks {
+    padding: 18px 40px;
+    border: none;
+    margin-top: 2rem;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    background-color: #ededed;
+    color: black;
+    border-radius: 9px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+  }
+  
+  /* Estilos hover */
+  .buttonThanks:hover {
+    transform: translateY(-3px);
+  }
+  
+  .buttonThanks {
+    color: #202020;
+  }
